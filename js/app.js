@@ -1,27 +1,27 @@
 'use strict'
 
 
-let userNme=prompt('what is your name ?')
+let userName=prompt('what is your name ?');
  //console.log(userName)
  
 
 alert('welcome to my page'+ userName + 'this page was made so you can learn more about me through a gussing game i will ask you a couble of question and you can answer with yes or no. for every correct answer you will got a point. okay!!lets go ')
-let book=prompt('my favorite book is harry potter?')
+let book=prompt('my favorite book is harry potter?');
   //console.log(book)
 
-let drink=prompt('my favorite drin is hot choclate?')
+let drink=prompt('my favorite drin is hot choclate?');
  // console.log(drink)
  drink=drink.toLowerCase();
 
-let movie=prompt('my favorite movie is home alone ?')  
+let movie=prompt('my favorite movie is home alone ?');
  // console.log(movie)
  movie=movie.toLowerCase();
 
-let food=prompt('i prefer home made food rather than restraunt food?')  
+let food=prompt('i prefer home made food rather than restraunt food?');
   // console.log(food)
   food=food.toLowerCase();
 
-let sport=prompt('i like to work out every day ?')   
+let sport=prompt('i like to work out every day ?');  
    // console.log(sport)
    sport=sport.toLowerCase();
 
@@ -43,5 +43,5 @@ if (sport=="yes") {alert('if watching tv consider working out ')
     
 }
 
-alert("thank you for visting our page and playing along " + userName )
+alert("thank you for visting our page and playing along " + userName );
 
