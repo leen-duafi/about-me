@@ -1,7 +1,7 @@
 'use strict'
 
 
-/* let userName=prompt('what is your name ?');
+let userName=prompt('what is your name ?');
 //console.log(userName)
 
 while(!userName){userName=prompt('what is your name ?')}
@@ -68,24 +68,56 @@ else (alert('please answer yes/y or no/n "'))
 
 alert("thank you for visting our page and playing along " + userName + " your score is  " + score + " out of 7" );
 
-*/
 
-let guess = prompt("guess a number between 0-5")
-guess=Number(guess);
+
+ let guess = prompt("guess a number between 0-5")
 while (!guess) { guess = prompt("guess a number between 0-5") }
-console.log(typeof(guess))
-for (let i = 0; i < 4 ; i++) {
+console.log(typeof (guess))
+
+for (let i = 0; i < 4; i++) {
   console.log(i)
 
-  if (guess > '3') {
+  if (guess > 3) {
     alert(" it is too high ");
     guess = prompt("try again")
   }
-  else if (guess < '3') {
+  else if (guess < 3) {
     alert("it is too low ");
     guess = prompt("try again")
   }
-  else if (guess == '3' ){alert('that is right ');break}
+  else if (guess == 3) {
+    alert('that is right ');
+    score++; break
+  }
+  else if (guess !== /^[0-9.,]+$/) {
+    alert('please enter only number');
+    guess = prompt("try again")
+  }
 }
+alert('the right answer is 3') 
 
-alert('the right answer is 3')
+
+
+
+
+
+
+
+
+
+ /* let colors = ['red' , 'yellow' , 'purble' , 'orange'];
+console.log(colors);
+let seven = prompt('what is my favorite color')
+
+
+for (let i = 0; i < 6; i++) {
+for (let j = 0; j < 10; j++) { 
+  
+  
+  if (seven==colors.indexOf(0,1,2,3)){alert('that is right ')
+score++}
+else if (seven!== colors.indexOf(0,1,2,3)) {alert('try again')
+seven = prompt('what is my favorite color')
+break;
+}}} */
+
