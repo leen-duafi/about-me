@@ -1,9 +1,9 @@
 'use strict'
 
- main
+ 
   let userName=prompt('what is your name ?');
- let userName=prompt('what is your name ?');
- main
+ 
+ 
 //console.log(userName)
 
 while(!userName){userName=prompt('what is your name ?')}
@@ -25,7 +25,7 @@ else if (book=="no" || book=="n"){ alert('one point for you :  harry potter is n
 else (alert("please answer yes/y or no/n "))
 }
 
-favouriteBook()
+favouriteBook();
 
 function favouriteDrink(){let drink=prompt('my favorite drink is hot choclate?');
 // console.log(drink)
@@ -39,7 +39,7 @@ else if (drink=="no" || drink=="n"){ alert(' my favorit drink IS HOT CHOCLATE ')
  else(alert("please answer yes/y or no/n "))
 }
 
-favouriteDrink()
+favouriteDrink();
 
 function favouriteMovie() {let movie=prompt('my favorite movie is home alone ?');
 // console.log(movie)
@@ -52,7 +52,8 @@ else if (movie =="no" || movie =="n"){ alert('that is right you got a point my f
 else(alert("please answer yes/y or no/n"))
  }
  
-favouriteMovie()
+favouriteMovie();
+
 function favouritFood(){let food=prompt('i prefer home made food rather than restraunt food?')
  // console.log(food)
  food=food.toLowerCase();
@@ -65,7 +66,7 @@ function favouritFood(){let food=prompt('i prefer home made food rather than res
 }else if (food=="no" || food == "n" ){alert('i do love fast food but my mother food is the best ')}
 else (alert("please answer yes/y or no/n "))
 }
-favouriteFood()
+favouriteFood();
 
 function favouriteSport(){let sport=prompt('i like to work out every day ?');  
   // console.log(sport)
@@ -76,7 +77,7 @@ function favouriteSport(){let sport=prompt('i like to work out every day ?');
 else if (sport == "no" || sport == "n"){alert('that is right and another point for you ');score++}
 else (alert('please answer yes/y or no/n "'))
 }
-favouriteSport()
+favouriteSport();
 
 alert("thank you for visting our page and playing along " + userName + " your score is  " + score + " out of 7" );
 
@@ -119,7 +120,7 @@ for (let i = 0; i < 4; i++) {
 alert('the right answer is 3') 
 
 }
-favouriteNumber()
+favouriteNumber();
 
 
 function favouriteColor(){let colors = ['red', 'yellow', 'purble', 'orange'];
