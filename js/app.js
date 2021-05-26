@@ -1,6 +1,9 @@
 'use strict'
 
+ main
   let userName=prompt('what is your name ?');
+ let userName=prompt('what is your name ?');
+ main
 //console.log(userName)
 
 while(!userName){userName=prompt('what is your name ?')}
@@ -79,9 +82,17 @@ alert("thank you for visting our page and playing along " + userName + " your sc
 
 
 
+
  
 
 function favouriteNumber(){ let guess = prompt("guess a number between 0-5")
+
+  let colors = ['red' , 'yellow' , 'purble' , 'orange'];
+//console.log(colors); 
+
+
+let guess = prompt("guess a number between 0-5")
+
 while (!guess) { guess = prompt("guess a number between 0-5") }
 console.log(typeof (guess))
 
@@ -106,8 +117,10 @@ for (let i = 0; i < 4; i++) {
   }
 }
 alert('the right answer is 3') 
+
 }
 favouriteNumber()
+
 
 function favouriteColor(){let colors = ['red', 'yellow', 'purble', 'orange'];
 let seven = ""
