@@ -127,11 +127,12 @@ favouriteNumber();
 function happyBirthday () {
 
   let seven="" ;
-  let colors = ['red', 'yellow', 'purble', 'orange'];
+  let colors = ['red', 'yellow', 'purple', 'orange'];
   
   for (let i = 0; i < 6; i++) {
 
     seven = prompt('what is my favorite color');
+    seven=seven.toLocaleLowerCase();
 
     for (let j = 0; j < colors.length; j++) {
 
