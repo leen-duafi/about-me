@@ -107,6 +107,7 @@ for (let i = 0; i < 6; i++) {
 
     if (seven == colors[j]) {
       alert('that is right ');
+      (alert("the correct answers are "+ colors ));
       score++;
       i == 6;
       break;
