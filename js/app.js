@@ -1,148 +1,154 @@
 'use strict'
 
- 
-  let userName=prompt('what is your name ?');
- 
- 
+
+let userName = prompt('what is your name ?');
+
+
 //console.log(userName)
 
-while(!userName){userName=prompt('what is your name ?')}
- 
+while (!userName) { userName = prompt('what is your name ?') }
 
-alert('welcome to my page ' +  userName   + ' this page was made so you can learn more about me through a gussing game i will ask you a couble of question and you can answer with yes or no. for every correct answer you will got a point. okay!!lets go ')
 
-let score=0
+alert('welcome to my page ' + userName + ' this page was made so you can learn more about me through a gussing game i will ask you a couble of question and you can answer with yes or no. for every correct answer you will got a point. okay!!lets go ')
 
-function favouriteBook() {let book=prompt('harry potter is my favorite book?');
-//conole.lo(book)
-book=book.toLowerCase();
+let score = 0
 
-while(!book){book=prompt('harry potter is my favorite book?')}
+function favouriteBook() {
+  let book = prompt('harry potter is my favorite book?');
+  //conole.lo(book)
+  book = book.toLowerCase();
 
-if(book=="yes" || book=="y" ){alert("no harry potter is a good book but my favorite is six of crows")
-}
-else if (book=="no" || book=="n"){ alert('one point for you :  harry potter is not my favorite book . my favorit book is six of crows');score++}
-else (alert("please answer yes/y or no/n "))
+  while (!book) { book = prompt('harry potter is my favorite book?') }
+
+  if (book == "yes" || book == "y") {
+    alert("no harry potter is a good book but my favorite is six of crows")
+  }
+  else if (book == "no" || book == "n") { alert('one point for you :  harry potter is not my favorite book . my favorit book is six of crows'); score++ }
+  else (alert("please answer yes/y or no/n "))
 }
 
 favouriteBook();
 
-function favouriteDrink(){let drink=prompt('my favorite drink is hot choclate?');
-// console.log(drink)
-drink=drink.toLowerCase();
+function favouriteDrink() {
+  let drink = prompt('my favorite drink is hot choclate?');
+  // console.log(drink)
+  drink = drink.toLowerCase();
 
-while(!drink){drink=prompt('my favorite drink is hot choclate?')}
+  while (!drink) { drink = prompt('my favorite drink is hot choclate?') }
 
-if(drink=="yes"|| drink =="y"){alert(" that is right. one pont for you");
-score++}
-else if (drink=="no" || drink=="n"){ alert(' my favorit drink IS HOT CHOCLATE ')}
- else(alert("please answer yes/y or no/n "))
+  if (drink == "yes" || drink == "y") {
+    alert(" that is right. one pont for you");
+    score++
+  }
+  else if (drink == "no" || drink == "n") { alert(' my favorit drink IS HOT CHOCLATE ') }
+  else (alert("please answer yes/y or no/n "))
 }
 
 favouriteDrink();
 
-function favouriteMovie() {let movie=prompt('my favorite movie is home alone ?');
-// console.log(movie)
-movie=movie.toLowerCase();
-while(!movie){movie=prompt('my favorite movie is home alone ?')}
+function favouriteMovie() {
+  let movie = prompt('my favorite movie is home alone ?');
+  // console.log(movie)
+  movie = movie.toLowerCase();
+  while (!movie) { movie = prompt('my favorite movie is home alone ?') }
 
 
-if (movie=="yes" || movie=="y") {alert("no that is not corect my fovirt movie is READY OR NOT ");}
-else if (movie =="no" || movie =="n"){ alert('that is right you got a point my fovirt movie is READY OR NOT ');score++}
-else(alert("please answer yes/y or no/n"))
- }
- 
+  if (movie == "yes" || movie == "y") { alert("no that is not corect my fovirt movie is READY OR NOT "); }
+  else if (movie == "no" || movie == "n") { alert('that is right you got a point my fovirt movie is READY OR NOT '); score++ }
+  else (alert("please answer yes/y or no/n"))
+}
+
 favouriteMovie();
 
-function favouritFood(){let food=prompt('i prefer home made food rather than restraunt food?')
- // console.log(food)
- food=food.toLowerCase();
- while(!food){food=prompt('i prefer home made food rather than restraunt food?')}
+function favouritFood() {
+  let food = prompt('i prefer home made food rather than restraunt food?')
+  // console.log(food)
+  food = food.toLowerCase();
+  while (!food) { food = prompt('i prefer home made food rather than restraunt food?') }
 
 
- if (food=="yes" || food=="y") {alert('that is right mother food is the best. one pont for you ' );
- score++
-   
-}else if (food=="no" || food == "n" ){alert('i do love fast food but my mother food is the best ')}
-else (alert("please answer yes/y or no/n "))
+  if (food == "yes" || food == "y") {
+    alert('that is right mother food is the best. one pont for you ');
+    score++
+
+  } else if (food == "no" || food == "n") { alert('i do love fast food but my mother food is the best ') }
+  else (alert("please answer yes/y or no/n "))
 }
-favouriteFood();
+favouritFood();
 
-function favouriteSport(){let sport=prompt('i like to work out every day ?');  
+function favouriteSport() {
+  let sport = prompt('i like to work out every day ?');
   // console.log(sport)
-  sport=sport.toLowerCase();
-  while(!sport){sport=prompt('i like to work out every day ?')}
+  sport = sport.toLowerCase();
+  while (!sport) { sport = prompt('i like to work out every day ?') }
 
- if (sport =="yes " || sport =="y")  {alert("if WATCHING tv consider working out ")}
-else if (sport == "no" || sport == "n"){alert('that is right and another point for you ');score++}
-else (alert('please answer yes/y or no/n "'))
+  if (sport == "yes " || sport == "y") { alert("if WATCHING tv consider working out ") }
+  else if (sport == "no" || sport == "n") { alert('that is right and another point for you '); score++ }
+  else (alert('please answer yes/y or no/n "'))
 }
-favouriteSport();
-
-alert("thank you for visting our page and playing along " + userName + " your score is  " + score + " out of 7" );
+favouriteSport(); 
 
 
+function favouriteNumber() {
+  let guess = prompt("guess a number between 0-5")
 
+  let colors = ['red', 'yellow', 'purble', 'orange'];
+  //console.log(colors); 
 
- 
+  while (!guess) { guess = prompt("guess a number between 0-5") }
+  console.log(typeof (guess))
 
-function favouriteNumber(){ let guess = prompt("guess a number between 0-5")
+  for (let i = 0; i < 4; i++) {
+    console.log(i)
 
-  let colors = ['red' , 'yellow' , 'purble' , 'orange'];
-//console.log(colors); 
-
-
-let guess = prompt("guess a number between 0-5")
-
-while (!guess) { guess = prompt("guess a number between 0-5") }
-console.log(typeof (guess))
-
-for (let i = 0; i < 4; i++) {
-  console.log(i)
-
-  if (guess > 3) {
-    alert(" it is too high ");
-    guess = prompt("try again")
-  }
-  else if (guess < 3) {
-    alert("it is too low ");
-    guess = prompt("try again")
-  }
-  else if (guess == 3) {
-    alert('that is right ');
-    score++; break
-  }
-  else if (guess !== /^[0-9.,]+$/) {
-    alert('please enter only number');
-    guess = prompt("try again")
-  }
-}
-alert('the right answer is 3') 
-
-}
-favouriteNumber();
-
-
-function favouriteColor(){let colors = ['red', 'yellow', 'purble', 'orange'];
-let seven = ""
-for (let i = 0; i < 6; i++) {
-  
-  seven = prompt('what is my favorite color')
-  for (let j = 0; j < colors.length; j++) {
-    
-    if (seven == colors[j]) {
-      alert('that is right ');
-      (alert("the correct answers are "+ colors ));
-      score++;
-      i == 6;
-      break;
+    if (guess > 3) {
+      alert(" it is too high ");
+      guess = prompt("try again")
     }
-  
-     if (seven !== colors[j]) { alert('try again') }
-     if (i<5){break}
-     if (i==5){alert("the correct answers are "+ colors );break;}
+    else if (guess < 3) {
+      alert("it is too low ");
+      guess = prompt("try again")
+    }
+    else if (guess == 3) {
+      alert('that is right ');
+      score++; break
+    }
+    else if (guess !== /^[0-9.,]+$/) {
+      alert('please enter only number');
+      guess = prompt("try again")
+    }
+  }
+  alert('the right answer is 3')
 
-  }
-  }
-} 
-favouritecolor();
+}
+favouriteNumber(); 
+
+
+function happyBirthday () {
+
+  let seven="" ;
+  let colors = ['red', 'yellow', 'purble', 'orange'];
+  
+  for (let i = 0; i < 6; i++) {
+
+    seven = prompt('what is my favorite color');
+
+    for (let j = 0; j < colors.length; j++) {
+
+      if (seven === colors[j]) {
+        alert('that is right ');
+        alert("the correct answers are " + colors);
+        score++;
+        i = 6;
+        break;
+      }
+
+      if (seven !== colors[j]) { alert('try again') }
+      if (i < 5) { break }
+      if (i == 5) { alert("the correct answers are " + colors); break; }
+
+    }
+  } }
+
+  happyBirthday ();
+alert("thank you for visting our page and playing along " + userName + " your score is  " + score + " out of 7");
