@@ -4,7 +4,7 @@
 let userName = prompt('what is your name ?');
 
 
-//console.log(userName)
+console.log(userName)
 
 while (!userName) { userName = prompt('what is your name ?') }
 
@@ -15,7 +15,9 @@ let score = 0
 
 function favouriteBook() {
   let book = prompt('harry potter is my favorite book?');
-  //conole.lo(book)
+
+  console.log(book);
+ 
   book = book.toLowerCase();
 
   while (!book) { book = prompt('harry potter is my favorite book?') }
@@ -29,9 +31,13 @@ function favouriteBook() {
 
 favouriteBook();
 
+
+
 function favouriteDrink() {
   let drink = prompt('my favorite drink is hot choclate?');
-  // console.log(drink)
+
+  console.log(drink);
+ 
   drink = drink.toLowerCase();
 
   while (!drink) { drink = prompt('my favorite drink is hot choclate?') }
@@ -46,9 +52,13 @@ function favouriteDrink() {
 
 favouriteDrink();
 
+
+
 function favouriteMovie() {
   let movie = prompt('my favorite movie is home alone ?');
-  // console.log(movie)
+  console.log(movie);
+
+
   movie = movie.toLowerCase();
   while (!movie) { movie = prompt('my favorite movie is home alone ?') }
 
@@ -60,9 +70,11 @@ function favouriteMovie() {
 
 favouriteMovie();
 
+
 function favouritFood() {
-  let food = prompt('i prefer home made food rather than restraunt food?')
-  // console.log(food)
+  let food = prompt('i prefer home made food rather than restraunt food?');
+  console.log(food);
+  
   food = food.toLowerCase();
   while (!food) { food = prompt('i prefer home made food rather than restraunt food?') }
 
@@ -76,9 +88,12 @@ function favouritFood() {
 }
 favouritFood();
 
+
+
 function favouriteSport() {
   let sport = prompt('i like to work out every day ?');
-  // console.log(sport)
+  console.log(sport);
+  
   sport = sport.toLowerCase();
   while (!sport) { sport = prompt('i like to work out every day ?') }
 
@@ -86,14 +101,14 @@ function favouriteSport() {
   else if (sport == "no" || sport == "n") { alert('that is right and another point for you '); score++ }
   else (alert('please answer yes/y or no/n "'))
 }
-favouriteSport(); 
+favouriteSport();
 
 
 function favouriteNumber() {
   let guess = prompt("guess a number between 0-5")
 
   let colors = ['red', 'yellow', 'purble', 'orange'];
-  //console.log(colors); 
+  console.log(colors);
 
   while (!guess) { guess = prompt("guess a number between 0-5") }
   console.log(typeof (guess))
@@ -121,18 +136,18 @@ function favouriteNumber() {
   alert('the right answer is 3')
 
 }
-favouriteNumber(); 
+favouriteNumber();
 
 
-function happyBirthday () {
+function happyBirthday() {
 
-  let seven="" ;
+  let seven = "";
   let colors = ['red', 'yellow', 'purple', 'orange'];
-  
+
   for (let i = 0; i < 6; i++) {
 
     seven = prompt('what is my favorite color');
-    seven=seven.toLocaleLowerCase();
+    seven = seven.toLocaleLowerCase();
 
     for (let j = 0; j < colors.length; j++) {
 
@@ -149,7 +164,8 @@ function happyBirthday () {
       if (i == 5) { alert("the correct answers are " + colors); break; }
 
     }
-  } }
+  }
+}
 
-  happyBirthday ();
+happyBirthday();
 alert("thank you for visting our page and playing along " + userName + " your score is  " + score + " out of 7");

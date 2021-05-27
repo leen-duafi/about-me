@@ -1,0 +1,42 @@
+header {
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+}
+
+
+
+
+footer {
+    background-color: darkgray;
+    color: darkgreen;
+}
+
+
+ul {
+    background-color: thistle;
+    color: darkorchid;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+}
+
+
+ol{
+    background-color: wheat;
+color:salmon;
+font-family: 'Dancing Script', cursive;
+font-size: large;
+
+}
+
+
+h3 {
+    
+    background-color: grey;
+text-align: center;
+    color: tomato;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+
+}
